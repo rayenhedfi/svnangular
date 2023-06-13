@@ -1,0 +1,13 @@
+.folder {
+    margin-bottom: 10px;
+  }
+  
+  .folder-name {
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .child-folders {
+    margin-left: 20px;
+  }
+  

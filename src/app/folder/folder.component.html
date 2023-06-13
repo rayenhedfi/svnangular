@@ -1,0 +1,18 @@
+
+<div>
+    <span>{{ folder.name }}</span>
+    <button (click)="addSubfolder()">+</button>
+    <button (click)="resetStructure()">-</button> <!-- Ajout du bouton "Reset" -->
+   <!-- <button (click)="downloadFolderStructure()">Download</button>-->
+   <button (click)="onApproveButtonClick()">Approuver</button>
+
+    <div *ngIf="showSubfolders">
+      <div *ngFor="let subfolder of folder.subfolders">
+        <div style="margin-left: 20px;">
+          
+          <app-folder [folder]="subfolder"></app-folder>
+        </div>
+      </div>
+    </div>
+  </div>
+    
